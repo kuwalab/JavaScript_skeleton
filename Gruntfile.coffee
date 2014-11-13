@@ -10,10 +10,10 @@ module.exports = (grunt) ->
     browserify:
       client:
         src: ['<%= dirs.dev %>/bar.js']
-        dest: '<%= dirs.dev %>/test.js'
+        dest: '<%= dirs.dev %>/test.coffee'
       coffee:
         files:
-          '<%= dirs.dev %>//test.js': ['<%= dirs.coffee %>/coffee/*.coffee']
+          '<%= dirs.dev %>/test.js': ['<%= dirs.coffee %>/*.coffee']
       options:
         transform: ['coffeeify']
         browserifyOptions:
@@ -26,7 +26,7 @@ module.exports = (grunt) ->
           sourceMap: true
           sourceMapName: '<%= dirs.dev %>/test.map'
         files:
-          '<%= dirs.dest %>/test.min.js': ['<%= dirs.dev %>/test.js']
+          '<%= dirs.dest %>/test.min.js': ['<%= dirs.dev %>/test.coffee']
     watch:
       scripts:
         files: ['**/*.coffee']
