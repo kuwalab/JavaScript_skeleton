@@ -1,2 +1,2 @@
-module.exports = ->
-  'bar'
+module.exports =
+  add: (x, y) -> x + y

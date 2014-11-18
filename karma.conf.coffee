@@ -28,7 +28,7 @@ module.exports = (config) ->
     # available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
       'test/**/*.coffee': ['browserify']
-      '**/*.html': ['html2js']
+      'test/**/*.html': ['html2js']
       extensions: ['.js', '.coffee']
     }
 
@@ -75,4 +75,3 @@ module.exports = (config) ->
     client:
       mocha:
         ui: 'tdd'
-

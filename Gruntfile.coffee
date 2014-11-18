@@ -10,10 +10,10 @@ module.exports = (grunt) ->
     browserify:
       client:
         src: ['<%= dirs.dev %>/bar.js']
-        dest: '<%= dirs.dev %>/test.coffee'
+        dest: '<%= dirs.dev %>/sample.coffee'
       coffee:
         files:
-          '<%= dirs.dev %>/test.js': ['<%= dirs.coffee %>/*.coffee']
+          '<%= dirs.dev %>/sample.js': ['<%= dirs.coffee %>/*.coffee']
       options:
         transform: ['coffeeify']
         browserifyOptions:
@@ -24,9 +24,9 @@ module.exports = (grunt) ->
         options:
           preserveComments: 'some' # /*!で始まるコメントを消さない
           sourceMap: true
-          sourceMapName: '<%= dirs.dev %>/test.map'
+          sourceMapName: '<%= dirs.dev %>/sample.map'
         files:
-          '<%= dirs.dest %>/test.min.js': ['<%= dirs.dev %>/test.coffee']
+          '<%= dirs.dest %>/sample.min.js': ['<%= dirs.dev %>/sample.js']
     watch:
       scripts:
         files: ['**/*.coffee']
