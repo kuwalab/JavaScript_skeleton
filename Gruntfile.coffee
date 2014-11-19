@@ -27,6 +27,13 @@ module.exports = (grunt) ->
           sourceMapName: '<%= dirs.dev %>/sample.map'
         files:
           '<%= dirs.dest %>/sample.min.js': ['<%= dirs.dev %>/sample.js']
+    karma:
+      unit:
+        configFile: 'karma.conf.coffee'
+      options:
+        client:
+          mocha:
+            ui: 'tdd'
     watch:
       scripts:
         files: ['**/*.coffee']
@@ -36,6 +43,7 @@ module.exports = (grunt) ->
 
   grunt.loadNpmTasks('grunt-contrib-watch')
   grunt.loadNpmTasks('grunt-contrib-uglify')
-  grunt.loadNpmTasks('grunt-browserify');
+  grunt.loadNpmTasks('grunt-browserify')
+  grunt.loadNpmTasks('grunt-karma')
 
   grunt.registerTask('default', ['browserify', 'uglify'])

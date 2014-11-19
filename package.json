@@ -25,7 +25,9 @@
     "mocha": "2.0.1",
     "chai": "1.10.0"
   },
-  "scripts": {},
+  "scripts": {
+    "test": "grunt karma"
+  },
   "repository": "",
   "author": "kuwalab",
   "license": "MIT"
