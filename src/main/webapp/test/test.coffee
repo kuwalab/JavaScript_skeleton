@@ -9,5 +9,5 @@ suite 'mochaのテスト', ->
     document.body.innerHTML = ''
 
   test '1 + 1は2になること', ->
-    assert.equal bar.add(1, 1), 3
-    assert.equal $('#my-fixture').html(), 'DOMのテスト'
+    assert.equal bar.add(1, 1), 2
+    assert.equal $('#my-fixture').html(), 'DOM'
