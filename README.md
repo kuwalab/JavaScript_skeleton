@@ -1,3 +1,3 @@
-# JavaScript_skelton https://travis-ci.org/kuwalab/JavaScript_skeleton.svg?branch=master
+# JavaScript_skelton [![Build Status](https://secure.travis-ci.org/kuwalab/JavaScript_skeleton.png?branch=master)](http://travis-ci.org/kuwalab/JavaScript_skeleton)
 
 Grunt + Karma + mocha + chaiのスケルトンプロジェクトです。
