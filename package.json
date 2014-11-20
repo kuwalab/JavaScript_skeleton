@@ -1,7 +1,7 @@
 {
-  "name": "xxx",
+  "name": "JavaScript_skeleton",
   "version": "0.1.0",
-  "description": "xxxx",
+  "description": "JavaScript Grunt + Karma + mocha + chai Skeleton",
   "main": "Gruntfile.coffee",
   "dependencies": {
     "coffee-script": "1.8.0",
