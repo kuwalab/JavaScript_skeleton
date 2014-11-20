@@ -8,9 +8,6 @@ module.exports = (grunt) ->
       dest: '<%= dirs.root %>/js'
 
     browserify:
-      client:
-        src: ['<%= dirs.dev %>/bar.js']
-        dest: '<%= dirs.dev %>/sample.coffee'
       coffee:
         files:
           '<%= dirs.dev %>/sample.js': ['<%= dirs.coffee %>/*.coffee']
