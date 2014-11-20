@@ -27,6 +27,7 @@ module.exports = (grunt) ->
           sourceMapName: '<%= dirs.dev %>/sample.map'
         files:
           '<%= dirs.dest %>/sample.min.js': ['<%= dirs.dev %>/sample.js']
+
     karma:
       unit:
         configFile: 'karma.conf.coffee'
@@ -34,6 +35,7 @@ module.exports = (grunt) ->
         client:
           mocha:
             ui: 'tdd'
+
     watch:
       scripts:
         files: ['**/*.coffee']
