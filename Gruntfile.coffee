@@ -42,9 +42,14 @@ module.exports = (grunt) ->
         tasks: ['default']
         options:
           interrupt: true
+    clean: [
+      '<%= dirs.root $>/js/**/*.js'
+      '<%= dirs.root %>/jssrc/*'
+    ]
 
-  grunt.loadNpmTasks('grunt-contrib-watch')
+  grunt.loadNpmTasks('grunt-contrib-clean')
   grunt.loadNpmTasks('grunt-contrib-uglify')
+  grunt.loadNpmTasks('grunt-contrib-watch')
   grunt.loadNpmTasks('grunt-browserify')
   grunt.loadNpmTasks('grunt-karma')
 
