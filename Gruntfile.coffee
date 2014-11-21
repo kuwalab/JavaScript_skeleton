@@ -40,8 +40,8 @@ module.exports = (grunt) ->
         options:
           interrupt: true
     clean: [
-      '<%= dirs.root $>/js/**/*.js'
-      '<%= dirs.root %>/jssrc/*'
+      '<%= dirs.dest %>'
+      '<%= dirs.dev %>'
     ]
 
   grunt.loadNpmTasks('grunt-contrib-clean')
