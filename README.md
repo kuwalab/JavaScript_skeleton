@@ -6,17 +6,25 @@ Grunt + Karma + mocha + chaiのスケルトンプロジェクトです。
 
 npmとbowerで必要なものをインストールしまう。
 
-   $ npm install
-   $ bower install
+```sh
+$ npm install
+$ bower install
+```
 
 ビルドはdefaultタスクに設定してありますので、gruntコマンドでビルドされます。
 
-   $ grunt
+```sh
+$ grunt
+```
 
 Karmaによるテストはtestタスクで実行できます。
 
-   $ grunt test
+```sh
+$ grunt test
+```
 
 npm testでもテストできます。
 
-   $ npm test
+```sh
+$ npm test
+```
