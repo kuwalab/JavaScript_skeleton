@@ -40,12 +40,17 @@ module.exports = (grunt) ->
         options:
           interrupt: true
 
-    clean: [
-      '<%= dirs.dest %>'
-      '<%= dirs.dev %>'
-      'bower_components'
-      'node_modules'
-    ]
+    clean:
+      all: [
+        '<%= dirs.dest %>'
+        '<%= dirs.dev %>'
+        'bower_components'
+        'node_modules'
+      ]
+      dev: [
+        '<%= dirs.dest %>'
+        '<%= dirs.dev %>'
+      ]
 
   grunt.loadNpmTasks('grunt-contrib-clean')
   grunt.loadNpmTasks('grunt-contrib-uglify')
