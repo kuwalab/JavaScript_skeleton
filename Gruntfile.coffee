@@ -39,9 +39,12 @@ module.exports = (grunt) ->
         tasks: ['default']
         options:
           interrupt: true
+
     clean: [
       '<%= dirs.dest %>'
       '<%= dirs.dev %>'
+      'bower_components'
+      'node_modules'
     ]
 
   grunt.loadNpmTasks('grunt-contrib-clean')
