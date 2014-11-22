@@ -20,7 +20,7 @@ $ grunt
 Karmaによるテストはtestタスクで実行できます。
 
 ```sh
-$ grunt test
+$ grunt karma
 ```
 
 npm testでもテストできます。
