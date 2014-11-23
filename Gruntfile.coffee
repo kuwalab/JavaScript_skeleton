@@ -2,9 +2,9 @@ module.exports = (grunt) ->
   grunt.initConfig
     pkg: grunt.file.readJSON('package.json')
     dirs:
-      root: 'src/main/webapp',
-      coffee: '<%= dirs.root %>/coffee',
-      dev: '<%= dirs.root %>/jssrc',
+      root: 'src/main/webapp'
+      coffee: '<%= dirs.root %>/coffee'
+      dev: '<%= dirs.root %>/jssrc'
       dest: '<%= dirs.root %>/js'
 
     browserify:
