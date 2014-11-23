@@ -9191,6 +9191,19 @@ return jQuery;
 }));
 
 },{}],2:[function(require,module,exports){
+var foo;
+
+foo = require('./foo.coffee');
+
+module.exports = {
+  add: function(x, y) {
+    return foo.add(x, y);
+  }
+};
+
+
+
+},{"./foo.coffee":3}],3:[function(require,module,exports){
 module.exports = {
   add: function(x, y) {
     return x + y;
@@ -9199,10 +9212,10 @@ module.exports = {
 
 
 
-},{}],3:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 var $, bar;
 
-bar = require('./bar');
+bar = require('./bar.coffee');
 
 $ = require('jquery');
 
@@ -9212,4 +9225,4 @@ $('#test').html('test');
 
 
 
-},{"./bar":2,"jquery":1}]},{},[2,3]);
+},{"./bar.coffee":2,"jquery":1}]},{},[2,3,4]);

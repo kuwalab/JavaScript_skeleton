@@ -1,4 +1,4 @@
-bar = require './bar'
+bar = require './bar.coffee'
 $ = require 'jquery'
 
 console.log 'bar=' + bar.add(1, 2)
